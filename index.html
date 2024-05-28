@@ -56,8 +56,10 @@
 							<img src="images/logo.png" alt="">
 						</a>
 
-						<a class="nav-link  navbar-toggler text-white add-button" href="tel:0775954809"><i
-								class="fa fa-phone fa-lg"></i>
+						
+
+								<a class="nav-link  navbar-toggler text-white add-button" href="tel:0775954809"><i
+									class="fas fa-phone-alt fa-lg">  0754207116</i> </a>
 						</a>
 
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -110,7 +112,7 @@
 								</li> -->
 								<li class="nav-item">
 									<a class="nav-link text-white add-button" href="tel:0775954809"><i
-											class="fas fa-phone-alt fa-lg"></i> 0754207116</a>
+											class="fas fa-phone-alt fa-lg">  0754207116</i></a>
 								</li>
 
 							</ul>
@@ -182,10 +184,37 @@
 													placeholder="Adresse d'arrivée">
 											</div>
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
-												<input type="date" class="form-control my-2 my-lg-1"
-												placeholder="Date de déménagement"
-													id="DateDemenagement">
+												<input type="text" class="form-control my-2 my-lg-1" id="DateDemenagement" placeholder="Date de déménagement">
 											</div>
+
+											<!-- Inclure la bibliothèque Pikaday -->
+<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" rel="stylesheet">
+
+<script>
+    // Initialiser Pikaday pour le champ de saisie de date
+    var picker = new Pikaday({
+        field: document.getElementById('DateDemenagement'),
+        format: 'DD/MM/YYYY', // Format de la date
+        toString(date, format) {
+            // Afficher la date dans le format spécifié
+            const day = date.getDate();
+            const month = date.getMonth() + 1;
+            const year = date.getFullYear();
+            return `${day}/${month}/${year}`;
+        },
+        parse(dateString, format) {
+            // Analyser la date au format spécifié
+            const parts = dateString.split('/');
+            const day = parseInt(parts[0], 10);
+            const month = parseInt(parts[1], 10) - 1;
+            const year = parseInt(parts[2], 10);
+            return new Date(year, month, day);
+        }
+    });
+</script>
+
+											
 
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<select class="w-100 form-control mt-lg-1 mt-md-2">
@@ -327,12 +356,14 @@
 		<!-- Container Start -->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4 col-md-7 offset-md-1 offset-lg-0 mb-4 mb-lg-0">
+				<div class="col-lg-5 col-md-7 offset-md-1 offset-lg-0 mb-4 mb-lg-0">
 					<!-- About -->
 					<div class="block about">
 						<!-- footer logo -->
 						<h4>À propos de nous</h4>
-						<img src="images/logo-footer.png" alt="logo">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
 						<!-- description -->
 
 						<p class="alt-color">Nous sommes une entreprise de déménagement opérant en France depuis 2018.
@@ -343,10 +374,16 @@
 					</div>
 				</div>
 				<!-- Link list -->
-				<div class="col-lg-3 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
+				<div class="col-lg-5 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
 					<div class="block">
 						<h4>Contact</h4>
-						<p class="alt-color">Email: trans.rama2018@gmail.com<br>Téléphone:  07 54 20 71 16 </p>
+						<p class="alt-color"> <b>Email:</b>  trans.rama2018@gmail.com<br> <b> Téléphone:</b>  07 54 20 71 16 </p>
+						
+						<div class="block">
+							<h4>Adresse</h4>
+							<p class="alt-color"> <b> Address: </b> 3 Rue de la Filature, 68200 Mulhouse</p>
+	
+						</div>
 						<div class="block">
 						<h4>Services</h4>
 									<p><b>TRANSPORT <br>LIVRAISON <br> DÉMÉNAGEMENT <br> MONTAGE DE MEUBLES </b></p>		
@@ -354,14 +391,7 @@
 
 					</div>
 				</div>
-				<!-- Link list -->
-				<div class="col-lg-3 col-md-3 offset-md-1 offset-lg-0 col-6 mb-4 mb-md-0">
-					<div class="block">
-						<h4>Adresse</h4>
-						<p class="alt-color">Address: 3 Rue de la Filature, 68200 Mulhouse</p>
-
-					</div>
-				</div>
+				
 
 			</div>
 		</div>

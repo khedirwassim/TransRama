@@ -2291,5 +2291,8 @@ form textarea {
     line-height: 35px;
   }
 }
+.navbar-brand img {
+  max-height: 40px; /* Définir la hauteur maximale de l'image à 60px */
+}
 /*# sourceMappingURL=style.css.map */
 
