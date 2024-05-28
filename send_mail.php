@@ -1,21 +1,28 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $startAddress = $_POST['startAddress'];
-    $endAddress = $_POST['endAddress'];
-    $moveDate = $_POST['moveDate'];
-    
-    $to = 'votre_email@example.com';
-    $subject = 'Nouvelle demande de devis';
-    $message = "Nom: $name\nEmail: $email\nNuméro de téléphone: $phone\nAdresse de départ: $startAddress\nAdresse d'arrivée: $endAddress\nDate du déménagement: $moveDate";
-    $headers = 'From: ' . $email;
-    
-    if (mail($to, $subject, $message, $headers)) {
-        echo 'success';
-    } else {
-        echo 'error';
-    }
+    // Récupérer les données du formulaire
+    $nomPrenom = $_POST["nomPrenom"];
+    $numTel = $_POST["numTel"];
+    $adresseDepart = $_POST["AdresseDepart"];
+    $adresseArrivee = $_POST["AdresseArivee"];
+    $dateDemenagement = $_POST["DateDemenagement"];
+    $surfaceActuelle = $_POST["surfaceActuelle"];
+
+    // Construire le contenu de l'e-mail
+    $to = "wassimusausausa@gmail.com";
+    $subject = "Demande de devis de déménagement";
+    $message = "Nom et Prénom: $nomPrenom\n";
+    $message .= "Numéro de téléphone: $numTel\n";
+    $message .= "Adresse de départ: $adresseDepart\n";
+    $message .= "Adresse d'arrivée: $adresseArrivee\n";
+    $message .= "Date de déménagement: $dateDemenagement\n";
+    $message .= "Surface actuelle: $surfaceActuelle\n";
+
+    // Envoyer l'e-mail
+    mail($to, $subject, $message);
+
+    // Rediriger l'utilisateur vers une page de confirmation
+    header("Location: index.html");
+    exit;
 }
 ?>
