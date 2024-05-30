@@ -3,22 +3,30 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>TransRama | entreprise déménagement en France</title>
+	<title>TransRama - entreprise déménagement en Europe</title>
+	<meta name="description"
+		content="Trans Rama Déménagement offre des services de déménagement professionnels à Mulhouse. Contactez-nous pour un déménagement sans stress.">
+
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Agency HTML Template">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 	<meta name="author" content="Themefisher">
 	<meta name="generator" content="Themefisher Classified Marketplace Template v1.0">
 	<meta name="theme-name" content="classimax" />
-	<link href="images/favicon.png" rel="shortcut icon">
+	<link href="images/favicon.png" rel="shortcut icon" alt="trans rama Service de déménagement à Mulhouse">
 	<link href="plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
 	<link href="plugins/bootstrap/bootstrap-slider.css" rel="stylesheet">
 	<link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="plugins/slick/slick.css" rel="stylesheet">
+	<link href="plugins/slick/slick-theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link href="plugins/slick/slick.css" rel="stylesheet">
 	<link href="plugins/slick/slick-theme.css" rel="stylesheet">
 	<link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+		<!-- Bootstrap Icons -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body class="body-wrapper">
@@ -30,8 +38,8 @@
 						<a class="navbar-brand" href="index.html">
 							<img src="images/logo.png" alt="">
 						</a>
-						<a class="navbar-toggler text-white add-button" href="tel:0775954809"><i
-								class="fas fa-phone-alt"> 0754207116 </i></a>
+						<a class="navbar-toggler text-white add-button" href="tel:0754207116"><i
+								class="fas fa-phone-alt"></i> Appler !</a>
 						<button class="navbar-toggler" type="button" data-toggle="collapse"
 							data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 							aria-expanded="false" aria-label="Toggle navigation">
@@ -43,15 +51,15 @@
 									<a class="nav-link" href="index.html">Accueil</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Nous contacter</a>
+									<a class="nav-link" href="contact-us.html">Contactez-nous</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">A propos de nous</a>
+									<a class="nav-link" href="about-us.html">A propos de nous</a>
 								</li>
 							</ul>
 							<ul class="navbar-nav ml-auto mt-10">
 								<li class="nav-item">
-									<a class="nav-link text-white add-button" href="tel:0775954809"><i
+									<a class="nav-link text-white add-button" href="tel:0754207116"><i
 											class="fas fa-phone-alt fa-lg"> 0754207116</i></a>
 								</li>
 							</ul>
@@ -74,10 +82,10 @@
 					<div class="content-block">
 						<h1>Votre Déménagement <br> Notre Priorité</h1>
 						<p>Faites confiance à notre expertise et rejoignez des milliers de clients satisfaits pour un
-							déménagement rapide, sécurisé et sans tracas, partout en France.</p>
+							déménagement rapide, sécurisé et sans stress, partout en France et à l'international</p>
 						<div class="short-popular-category-list ">
 							<br><br>
-							<h2>Demandez votre devis gratuitement et en un seul clic maintenant</h2>
+
 						</div>
 					</div>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -86,28 +94,47 @@
 						<div class="container">
 							<div class="row justify-content-center">
 								<div class="col-lg-12 col-md-12 align-content-center">
+									<div class="section-title">
+										<h2>Demandez votre devis GRATUITEMENT !</h2>
+									</div>
 									<form id="contactForm">
 										<div class="form-row">
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<input type="text" class="form-control my-2 my-lg-1" id="nomPrenom"
-													name="nomPrenom" required placeholder="Nom et Prénom">
+													name="nomPrenom" required placeholder="Nom et Prénom *">
 											</div>
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<input type="tel" class="form-control my-2 my-lg-1" id="numTel"
-													name="numTel" required placeholder="Numéro de téléphone">
+													name="numTel" required placeholder="Numéro de téléphone *">
+											</div>
+											<div class="form-group col-xl-4 col-lg-3 col-md-6">
+												<input type="email" class="form-control my-2 my-lg-1" id="EmailAdr"
+													name="EmailAdr" placeholder="E-mail">
 											</div>
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<input type="text" class="form-control my-2 my-lg-1" id="AdresseDepart"
-													name="AdresseDepart" required placeholder="Adresse de départ">
+													name="AdresseDepart" required placeholder="Adresse de départ *">
 											</div>
+
+											<div class="form-group col-xl-4 col-lg-3 col-md-6">
+												<input type="number" class="form-control my-2 my-lg-1" id="EtageDepart"
+													name="EtageDepart" required placeholder="Étage de départ *">
+											</div>
+
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<input type="text" class="form-control my-2 my-lg-1" id="AdresseArivee"
-													name="AdresseArivee" required placeholder="Adresse d'arrivée">
+													name="AdresseArivee" required placeholder="Adresse d'arrivée *">
 											</div>
+
+											<div class="form-group col-xl-4 col-lg-3 col-md-6">
+												<input type="number" class="form-control my-2 my-lg-1" id="EtageArivee"
+													name="EtageArivee" required placeholder="Étage d'arrivée *">
+											</div>
+
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
 												<input type="text" class="form-control my-2 my-lg-1"
 													id="DateDemenagement" name="DateDemenagement" required
-													placeholder="Date de déménagement">
+													placeholder="Première date possible *">
 											</div>
 											<script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 											<link href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
@@ -132,20 +159,52 @@
 												});
 											</script>
 											<div class="form-group col-xl-4 col-lg-3 col-md-6">
-												<select class="w-100 form-control mt-lg-1 mt-md-2"
-													name="surfaceActuelle">
+												<input type="text" class="form-control my-2 my-lg-1"
+													id="DateDemenagement2" name="DateDemenagement2"
+													placeholder="Dernière date possible">
+											</div>
+											<script>
+												var picker = new Pikaday({
+													field: document.getElementById('DateDemenagement2'),
+													format: 'DD/MM/YYYY',
+													toString(date, format) {
+														const day = date.getDate();
+														const month = date.getMonth() + 1;
+														const year = date.getFullYear();
+														return `${day}/${month}/${year}`;
+													},
+													parse(dateString, format) {
+														const parts = dateString.split('/');
+														const day = parseInt(parts[0], 10);
+														const month = parseInt(parts[1], 10) - 1;
+														const year = parseInt(parts[2], 10);
+														return new Date(year, month, day);
+													}
+												});
+											</script>
+											<div class="form-group col-xl-4 col-lg-3 col-md-6">
+												<select class="w-100 form-control mt-lg-1 mt-md-2" name="surfaceActuelle">
 													<option>Surface actuelle</option>
-													<option value="1">
-														< 30 m2</option>
-													<option value="2">30-50 m2</option>
-													<option value="3">50-80 m2</option>
-													<option value="4">80-120 m2</option>
-													<option value="5">>180 m2</option>
+													<option value=" 30 m2"> < 30 m2</option>
+													<option value="30-50 m2">30-50 m2</option>
+													<option value="50-80 m2">50-80 m2</option>
+													<option value="80-120 m2">80-120 m2</option>
+													<option value=">180 m2">>180 m2</option>
 												</select>
 											</div>
-											<div class="form-group col-xl-2 col-lg-3 col-md-6 align-self-center">
+											<div class="form-group col-xl-4 col-lg-3 col-md-6">
+												<select class="w-100 form-control mt-lg-1 mt-md-2" name="habitation">
+													<option>Habitation</option>
+													<option value="Entreprise">Entreprise</option>
+													<option value="Appartement">Appartement</option>
+												</select>
+											</div>
+
+
+
+											<div class="form-group col-xl-4 col-lg-3 col-md-6 align-self-center">
 												<button type="submit" class="btn btn-primary active w-100">Demandez
-													votre devis</button>
+													votre devis GRATUITEMENT</button>
 											</div>
 										</div>
 									</form>
@@ -163,7 +222,8 @@
 													</button>
 												</div>
 												<div class="modal-body">
-													Votre demande de devis a été envoyée avec succès.
+													Votre demande de devis a été envoyée avec succès. Vous recevrez une
+													réponse de notre service dans les plus brefs délais
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-secondary"
@@ -186,7 +246,7 @@
 													success: function (response) {
 														if (response.status === 'success') {
 															$("#confirmationModal").modal("show");
-															console.log("je suis secces")
+
 														} else {
 															alert("Erreur lors de l'envoi du formulaire. Veuillez réessayer.");
 														}
@@ -209,13 +269,169 @@
 	</section>
 
 
+	<section class="section">
+		<div class="large_block">
+			<div class="section-title">
+				<h2>Découvrez nos Trois Formules</h2>
+			</div>
+			<div id="formuleblockdesktop" class="row">
 
+				<div class="col-lg-12">
+					<div class="trending-ads-slide">
+
+						<div class="col">
+							<div class="first_line bronze">
+								<b>Eco</b>
+							</div>
+							<div id="eco-details" class="details">
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Chargement-Transport-Livraison</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du mobilier non fragile</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+							
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de la literie</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise à disposition de penderies</p><i class="bi bi-x-lg"
+									style="font-size: 2rem; color: red;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Emballage de la vaisselle</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Démontage et remontage du mobilier</p><i class="bi bi-x-lg"
+									style="font-size: 2rem; color: red;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du fragile</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+								
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de l'électronique</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise en carton complète</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col">
+							<div class="first_line blue ">
+								<b>Standard</b>
+							</div>
+							<div id="standard-details" class="details">
+
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Chargement-Transport-Livraison</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du mobilier non fragile</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de la literie</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise à disposition de penderies</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Emballage et deballage de la vaisselle</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Démontage et remontage du mobilier</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du fragile</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de l'électronique</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise en carton complète</p><i class="bi bi-x-lg"
+										style="font-size: 2rem; color: red;"></i>
+								</div>
+							
+
+							</div>
+						</div>
+						<div class="col">
+							<div class="first_line gold ">
+								<b>Lux</b>
+							</div>
+							<div id="confort-details" class="details">
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Chargement-Transport-Livraison</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du mobilier non fragile</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de la literie</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise à disposition de penderies</p><i class="bi bi-check-lg"
+										style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Emballage de la vaisselle</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Démontage et remontage du mobilier</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection du fragile</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Protection de l'électronique</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+								<div class="d-flex justify-content-between align-items-center">
+									<p>Mise en carton complète</p><i class="bi bi-check-lg"
+									style="font-size: 2rem; color: green;"></i>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 	<!--==========================================
 =            All Category Section            =
 ===========================================-->
 
-	<section class=" section">
+	<section class="section">
 		<!-- Container Start -->
 		<div class="container">
 			<div class="row">
@@ -288,6 +504,125 @@
 	</section>
 
 
+
+
+
+
+
+
+	
+	<!--===========================================
+=            Popular deals section            =
+============================================-->
+
+	<section class="popular-deals section bg-gray">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+						<h2>Nos Réalisations </h2>
+						<p>Pour votre confiance</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- offer 01 -->
+				<div class="col-lg-12">
+					<div class="trending-ads-slide">
+						<div class="col-sm-12 col-lg-4">
+							<!-- product card -->
+							<div class="product-item bg-light">
+								<div class="card">
+									<div class="thumb-content">
+										<!-- <div class="price">$200</div> -->	
+											<img class="card-img-top img-fluid" src="images/demenagent_img/demenagent_img1.jpg"
+												alt="demenagent propre">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Protection total de vous meubles</h4>
+										
+										
+										
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="col-sm-12 col-lg-4">
+							<!-- product card -->
+							<div class="product-item bg-light">
+								<div class="card">
+									<div class="thumb-content">
+										<!-- <div class="price">$200</div> -->
+										<img class="card-img-top img-fluid" src="images/demenagent_img/demenagent_img2.jpg"
+												alt="demenagent propre">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Protection total de vous meubles</h4>
+										
+									
+										
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="col-sm-12 col-lg-4">
+							<!-- product card -->
+							<div class="product-item bg-light">
+								<div class="card">
+									<div class="thumb-content">
+										<!-- <div class="price">$200</div> -->
+										<img class="card-img-top img-fluid" src="images/demenagent_img/demenagent_img3.jpg"
+												alt="demenagent propre">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Housse pour vos matelas</h4>
+										
+										
+									
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+						<div class="col-sm-12 col-lg-4">
+							<!-- product card -->
+							<div class="product-item bg-light">
+								<div class="card">
+									<div class="thumb-content">
+										<!-- <div class="price">$200</div> -->
+										<img class="card-img-top img-fluid" src="images/demenagent_img/demenagent_img5.jpg"
+												alt="demenagent propre">
+									</div>
+									<div class="card-body">
+										<h4 class="card-title">Protection total de vous meubles</h4>
+										
+										
+										
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
 	<!--====================================
 =            Call to Action            =
 =====================================-->
@@ -333,15 +668,16 @@
 							Notre mission est d'offrir des services de déménagement fiables, sécurisés et abordables à
 							nos clients à travers tout le pays. Forts de notre expérience et de notre engagement envers
 							la satisfaction du client, nous avons aidé de nombreux individus et familles à déménager en
-							toute tranquillité d'esprit.</p>
+							toute tranquillité d'esprit.</p> <br>
+						<p>Contactez-nous. Trans Rama Déménagement - Votre partenaire de confiance.</p>
 					</div>
 				</div>
 				<!-- Link list -->
 				<div class="col-lg-5 offset-lg-1 col-md-3 col-6 mb-4 mb-lg-0">
 					<div class="block">
 						<h4>Contact</h4>
-						<p class="alt-color"> <b>Email:</b> trans.rama2018@gmail.com<br> <b> Téléphone:</b>07542071
-							16 </p>
+						<p class="alt-color"> <b>Email:</b> trans.rama2018@gmail.com<br> <b> Téléphone:</b> 0754207116
+						</p>
 
 						<div class="block">
 							<h4>Adresse</h4>
@@ -350,7 +686,7 @@
 						</div>
 						<div class="block">
 							<h4>Services</h4>
-							<p><b>TRANSPORT <br>LIVRAISON <br> DÉMÉNAGEMENT <br> MONTAGE DE MEUBLES </b></p>
+							<p><b> DÉMÉNAGEMENT <br>MONTAGE DE MEUBLES<br> TRANSPORT <br>LIVRAISON </b></p>
 						</div>
 
 					</div>
@@ -358,12 +694,10 @@
 
 
 			</div>
+
 		</div>
 		<!-- Container End -->
 	</footer>
-
-	<!-- Footer Bottom -->
-
 
 	<!-- 
 Essential Scripts
@@ -373,12 +707,10 @@ Essential Scripts
 	<script src="plugins/bootstrap/bootstrap.min.js"></script>
 	<script src="plugins/bootstrap/bootstrap-slider.js"></script>
 	<script src="plugins/tether/js/tether.min.js"></script>
-	<script src="plugins/raty/jquery.raty-fa.js"></script>
 	<script src="plugins/slick/slick.min.js"></script>
 	<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
-
-
 	<script src="js/script.js"></script>
+
 
 </body>
 
